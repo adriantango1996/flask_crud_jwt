@@ -2,7 +2,7 @@ flask-rest-api-crud-authentication
 ======================
 
 ## Installation
-1. To install, either run
+1. To install pyhton library
 
 ```
 pip install requirements.txt
@@ -15,27 +15,34 @@ python app.py
 ```
 
 
-## postman collection
-the collecttion inclduing crud rest api and postman unit test
-
 ## Important note
-this project support: MYSQL and sqlite.
+1. this project support: MYSQL and sqlite.
 
 Default using sqlite. 
 
-if you want to mySQL modify the code using "mysql://root:@localhost/customer"
-`app.config["SQLALCHEMY_DATABASE_URI"] = "mysql://root:@localhost/customer"
+if you want to mySQL modify the `SQLALCHEMY_DATABASE_URI` to using "mysql://root:@localhost/customer" and open xampp  Apache and MySQL
 
-`app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///Database.db"``
+```
+app.config["SQLALCHEMY_DATABASE_URI"] = "mysql://root:@localhost/customer"
+```
+
+## postman collection
+this is the postman collection and environment. Inside the postman collection including unit test.
+
+1. import Customer.postman environment to postman: [postman_environment.json](https://drive.google.com/file/d/19sTbQymseWh4Eu-P4nrcSbPlJSDaHRQT/view?usp=drive_link)
+
+2. import flask postman collection to test the crud api: [postman_environment.json](https://drive.google.com/file/d/1ZDZb-cndVlOnqqMQr9_huQ_B4MDbGEQD/view?usp=drive_link)
 
 
 ## how to run the postman collection test
 
 1. clone this project
 
-2. import "Flask" collection in postman
+2. import "Flask" postman collection in postman
 
-3. Run Collection
+2. import "Flask" postman environment in postman
 
-4. RUn Flask
+4. Run Collection
+
+5. Run Flask
 
